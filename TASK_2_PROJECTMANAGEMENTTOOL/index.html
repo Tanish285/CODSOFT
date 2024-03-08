@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ashish's Landing Page</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('images/bg.jpg');
+            background-size: cover;
+            font: sans-serif;
+        }
+
+        nav {
+            width: 100%;
+            height: 100px;
+            color: black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .logo {
+            font-size: 2em;
+            letter-spacing: 2px;
+            color: skyblue;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+        }
+
+        .menu a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid rgb(35, 81, 207);
+            transition: 0.4s linear;
+        }
+
+        .menu a:hover:before {
+            width: 85%;
+        }
+
+        .book a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: rgb(35, 81, 207);
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+
+        .book a:hover {
+            background: transparent;
+            border: 1px solid aquamarine;
+        }
+
+        .h-txt {
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .h-txt span {
+            font-size: 3.5em;
+            letter-spacing: 2px;
+        }
+
+        .h-txt h1 {
+            font-size: 1.5em;
+            color: yellow;
+        }
+
+        .h-txt a {
+            text-decoration: none;
+            background: rgb(0, 0, 0);
+            border-radius: 8px;
+            color: rgb(254, 254, 254);
+            padding: 10px 20px;
+            transition: 0.4s;
+        }
+
+        .h-txt a:hover {
+            background: transparent;
+            border: 1px solid aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                SUNRISE
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Rooms</a>
+                <a href="#">Restaurant</a>
+                <a href="#">Gallery</a>
+                <a href="#">Offers</a>
+            </div>
+            <div class="book">
+                <a href="#">Book A Room</a>
+        </nav>
+        <section class="h-txt">
+            <span>SUNRISE HOTELS</span>
+            <br>
+            <h1>India's Most Spectacular Waterfront Hotel & Resort</h1>
+            <br>
+            <a href="#">Discover Now</a>
+        </section>
+    </header>
+
+</body>
+
+</html>
